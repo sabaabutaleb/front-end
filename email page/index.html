@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Email Project</title>
+    <style>
+      .body {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-family: "Roboto", sans-serif;
+        box-sizing: border-box;
+      }
+      .page-div {
+        display: grid;
+        grid-template-columns: 80px 250px 1fr 200px;
+        grid-template-rows: 130px 1fr;
+        height: 100vh;
+      }
+      .nav-div {
+        background-color: rgb(10, 10, 42);
+        grid-row: 1/3;
+        color: white;
+        text-align: center;
+      }
+      .nav-heading {
+        padding-top: 52px;
+      }
+      .heading {
+        grid-column: 2/-1;
+        background-color: rgb(20, 20, 178);
+      }
+      .heading-elements-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .heading-elements {
+        background-color: rgb(15, 15, 121);
+        padding: 5px 15px;
+        text-decoration: none;
+        margin-left: 25px;
+        display: inline-block;
+        margin-top: 70px;
+        color: white;
+      }
+      .heading-elements-trash {
+        background-color: rgb(234, 6, 6);
+        text-decoration: none;
+        color: white;
+        padding: 5px 15px;
+        margin-right: 25px;
+        margin-top: 70px;
+        display: inline-block;
+      }
+      /* .emails-list-div {
+        grid-column: 2;
+        grid-row: 2;
+        background-color: rgb(224, 222, 222);
+      } */
+      .list-of-emails {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-around;
+        align-items: center;
+        overflow: scroll;
+        background-color: rgb(224, 222, 222);
+      }
+      .btn-email {
+        display: inline-block;
+        text-decoration: none;
+        background-color: rgb(161, 160, 160);
+        color: black;
+        font-weight: 600;
+        padding: 20px 50px;
+        margin-top: 20px;
+        flex-shrink: 0;
+      }
+      .email-view {
+        grid-column: 3;
+        grid-row: 2;
+      }
+      .email-view-heading,
+      .additional-information-heading {
+        color: rgb(3, 3, 74);
+        text-align: center;
+      }
+      .additional-information {
+        grid-column: 4;
+        grid-row: 2;
+        background-color: rgb(224, 222, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-div">
+      <div class="nav-div">
+        <h2 class="nav-heading">Nav</h2>
+      </div>
+      <div class="heading">
+        <div class="heading-elements-div">
+          <div class="heading-elements-div-left">
+            <a class="heading-elements" href="#">New</a>
+            <a class="heading-elements" href="#">Replay</a>
+            <a class="heading-elements" href="#">Forward</a>
+            <a class="heading-elements" href="#">Mark unread</a>
+          </div>
+          <div class="heading-elements-div-right">
+            <a class="heading-elements-trash" href="#">Trash</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="emails-list-div"> -->
+      <div class="list-of-emails">
+        <a class="btn btn-email" href="#">Email 1</a>
+        <a class="btn btn-email" href="#">Email 2</a>
+        <a class="btn btn-email" href="#">Email 3</a>
+        <a class="btn btn-email" href="#">Email 4</a>
+        <a class="btn btn-email" href="#">Email 5</a>
+        <a class="btn btn-email" href="#">Email 6</a>
+        <!-- <a class="btn btn-email" href="#">Email 7</a>
+        <a class="btn btn-email" href="#">Email 8</a>
+        <a class="btn btn-email" href="#">Email 9</a>
+        <a class="btn btn-email" href="#">Email 10</a> -->
+      </div>
+      <!-- </div> -->
+      <div class="email-view">
+        <h2 class="email-view-heading">Email View</h2>
+      </div>
+      <div class="additional-information">
+        <h2 class="additional-information-heading">Additional info</h2>
+      </div>
+    </div>
+  </body>
+</html>

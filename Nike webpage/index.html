@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family:  sans-serif;
+        color: white;
+      }
+      body {
+        background: linear-gradient(#111, #222);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: rgb(209, 9, 9);
+        clip-path: circle(40% at right 70%);
+        position: absolute;
+        z-index: -1;
+      }
+      .container {
+        height: 80%;
+        width: 80%;
+        background: rgb(255, 255, 255, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        width: 80%;
+        margin: auto;
+      }
+      .logo {
+        text-transform: uppercase;
+        font-size: 36px;
+        /* margin-left: 100px; */
+        
+      }
+      .nav {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        flex-basis: 20px 0px;
+      }
+      .nav a {
+        text-decoration: none;
+        padding: 20px;
+      }
+      .nav a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .content {
+        /* background-color: aqua; */
+        width: 80%;
+        height: 100%;
+        margin-top: 100px;
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .content .text{
+        width:40%;
+      }
+      .content h2 {
+        font-size: 48px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .content p {
+        width: 390px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 10px 0;
+      }
+      .content .image {
+        /* height: 100px; */
+        width: 40%;
+      }
+      .content .image img{
+        width: 400px;
+      }
+      @media (min-width :1010px) and (max-width:1200px) {
+        .content .image img{
+        width: 350px;
+        }
+      }
+    
+      
+      @media (min-width :906px) and (max-width:1009px) {
+        .content .image img{
+        width: 300px;
+      }
+     
+      }
+      @media  (max-width:905px) {
+      .content{
+        flex-direction: column;
+        justify-content: center;
+      }
+      .content .text, .content .image{
+        width:80%;
+      }  
+      .header{
+        flex-direction: column;
+        justify-content: center;
+      }
+      .loge{
+        margin: auto;
+
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glass container">
+      <div class="header">
+        <div class="logo">Nike</div>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="text">
+          <h2>Nike,<br> tennis shoes</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vitae
+            fugit blanditiis ad nisi accusantium? Illum voluptatibus
+            consequatur, sapiente fugit quos in doloribus, temporibus, natus sed
+            eos odit magni atque?
+          </p>
+        </div>
+        <div class="image">
+          <img class="profile-pic" src="./shoes.png" alt="shoes pic" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

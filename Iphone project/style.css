@@ -1,0 +1,153 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 30px; */
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  
+}
+/* .logo{margin-left:80px;
+}
+.logo img{
+  width:50px;
+  height:50px;
+} */
+.logo{
+  /* margin-left:80px; */
+  width:50px;
+  height:50px;
+}
+ul{
+  display: flex;
+  justify-content:space-evenly;
+  width:50%;
+  list-style:none;
+}
+.nav-elemnt{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.content{
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 10%; */
+  /* margin: 20px; */
+}
+.text{
+  /* margin-left: 80px; */
+  width: 80%;
+}
+.main-text{
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.text p{
+  letter-spacing: 1px;
+  font-size: 18px;
+  width: 400px;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+.products-btn{
+  background: white;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+.products-btn:hover{
+  color: white;
+  background:rgba(0, 0, 0, 0.082);
+  border: 2px solid white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: .5s;
+}
+.centered-image-div{
+  width: 30%;
+}
+.centered-image {
+  width: 212px;
+  /* height: 388px;  */
+  }
+  .selections{
+    /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 50px; */
+  position: absolute;
+  bottom: 20px;
+  left:50%;
+  transform: translate(-50%);
+}
+.link-images img{
+  /* display: inline-block; */
+  width: 50px;
+  margin: 10px;
+}
+.link-images img:hover{
+  /* display: inline-block; */
+  transform: scale(130%);
+  transition: .5s;
+}
+
+
+@media (max-width:760px) {
+  .content{
+    width: 80%;
+    height: 60%;
+    flex-direction: column;
+    margin-left: 10%;
+    margin: 20px;
+  }
+  .centered-image {
+    width: 162px;
+    height: 250px; 
+    }
+    .selections{
+      /* height: 50px; */
+      width: 100%;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .link-images img{
+      display: inline-block;
+      width: 30px;
+      height: 50px;
+      margin-bottom: 30px;
+    }
+  
+}
